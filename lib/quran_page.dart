@@ -25,11 +25,11 @@ class _QuranPageState extends State<QuranPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView.builder(
-          itemCount: 114,
+          itemCount: 605,
           controller: _controller,
           reverse: true,
           itemBuilder: (_, index) {
-            int pageNum = widget.initialPage+index-widget.initialPage;
+            int pageNum = widget.initialPage+(index-widget.initialPage);
             return QuranPageView(pageNum: pageNum);
           },
       onPageChanged: (index){
